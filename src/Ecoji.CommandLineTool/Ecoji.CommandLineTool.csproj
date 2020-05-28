@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>ecoji</ToolCommandName>
+    <PackageId>dotnet-ecoji</PackageId>
+    <Description>The .NET command line tool for Ecoji encoding and decoding. Ecoji is like base64, except it's base1024, and uses an emoji alphabet!</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ecoji\Ecoji.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Mono.Options" Version="6.6.0.161" />
+  </ItemGroup>
+</Project>

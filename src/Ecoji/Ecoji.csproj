@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Ecoji encodes and decodes data using emojis. Like base64, except it's base1024, and uses an emoji alphabet!</Description>
+  </PropertyGroup>
+</Project>

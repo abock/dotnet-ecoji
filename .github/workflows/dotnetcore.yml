@@ -1,0 +1,36 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ master ]
+    tags:        
+      - v*
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - run: git fetch --force --prune --tags
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.200
+    - name: NuGet Restore
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration release --no-restore
+    - name: Test
+      run: dotnet test --configuration release --no-restore --no-build
+    - name: Pack
+      run: dotnet pack --configuration release --no-restore --no-build
+    - name: Push
+      run: |
+        for pkg in _artifacts/*.nupkg; do
+          dotnet nuget push --api-key ${{secrets.NUGET_PUSH_TOKEN}} --source https://api.nuget.org/v3/index.json --skip-duplicate --no-symbols true "${pkg}";
+        done
