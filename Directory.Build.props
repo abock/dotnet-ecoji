@@ -1,0 +1,21 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)_artifacts</PackageOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Authors>Aaron Bockover</Authors>
+    <Copyright>Copyright 2020 Aaron Bockover</Copyright>
+    <RepositoryUrl>https://github.com/abock/dotnet-ecoji</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>emoji;ecoji;encoding;decoding;unicode;utf8;</PackageTags>
+    <Description>Ecoji encodes data as 1024 emojis: &quot;base1024&quot; with an emoji character set.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\icon.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+<Project>
+  <Target
+    Name="SetVersions"
+    BeforeTargets="GetAssemblyVersion;GetPackageVersion;InitializeSourceControlInformation"
+    Returns="Version">
+    <Exec
+      Command="git for-each-ref --sort=taggerdate --format '%25(refname)' refs/tags"
+      ConsoleToMSBuild="true"
+      StandardOutputImportance="low">
+      <Output TaskParameter="ConsoleOutput" ItemName="GitOutput"/>
+    </Exec>
+    <ItemGroup>
+      <GitTag
+        Condition="$([System.Text.RegularExpressions.Regex]::IsMatch(%(Filename)%(Extension), '^v\d+\.\d+\.\d+$'))"
+        Include="$([System.String]::Copy(%(GitOutput.Filename)%(GitOutput.Extension)).Substring(1))"/>
+    </ItemGroup>
+    <PropertyGroup>
+      <PackageVersion>%(GitTag.Identity)</PackageVersion>
+    </PropertyGroup>
+    <PropertyGroup>
+      <PackageVersion Condition="'$(PackageVersion)' == ''">0.0.0</PackageVersion>
+      <Version>$(PackageVersion)</Version>
+    </PropertyGroup>
+    <Message
+      Text="PackageVersion: $(PackageVersion)"
+      Importance="high"/>
+  </Target>
+</Project>
