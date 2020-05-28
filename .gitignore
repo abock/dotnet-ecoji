@@ -4,3 +4,4 @@ _artifacts/
 .vscode/launch.json
 .vscode/tasks.json
 .vs/
+.DS_Store
