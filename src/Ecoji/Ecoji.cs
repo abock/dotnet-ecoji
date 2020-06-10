@@ -10,8 +10,22 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text;
 
+/// <summary>
+/// Encode and decode strings and arbitrary data using an alphabet of
+/// 1024 emojis. Like a really colorful and expressive base64!
+/// </summary>
 public static partial class Ecoji
 {
+    /// <summary>Encode a UTF-8 string using emojis with optional wrapping.</summary>
+    /// <returns>A string of emojis encoding <paramref name="input"/>.</returns>
+    /// <param name="input">The string to encode.</param>
+    /// <param name="wrap">
+    /// Insert <see cref="Environment.NewLine"/> after after every 
+    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
+    /// </param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when <paramref name="input"/> is <c>null</c>.
+    /// </exception>
     public static string Encode(string input, int wrap = 0)
     {
         if (input is null)
@@ -20,6 +34,16 @@ public static partial class Ecoji
         return Encode(Encoding.UTF8.GetBytes(input), wrap);
     }
 
+    /// <summary>Encode data using emojis with optional wrapping.</summary>
+    /// <returns>A string of emojis encoding <paramref name="input"/>.</returns>
+    /// <param name="input">The bytes to encode.</param>
+    /// <param name="wrap">
+    /// Insert <see cref="Environment.NewLine"/> after after every 
+    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
+    /// </param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when <paramref name="input"/> is <c>null</c>.
+    /// </exception>
     public static string Encode(byte[] input, int wrap = 0)
     {
         if (input is null)
@@ -29,6 +53,16 @@ public static partial class Ecoji
         return Encode(stream, wrap);
     }
 
+    /// <summary>Encode a stream of data using emojis with optional wrapping.</summary>
+    /// <returns>A string of emojis encoding <paramref name="input"/>.</returns>
+    /// <param name="input">The stream to encode.</param>
+    /// <param name="wrap">
+    /// Insert <see cref="Environment.NewLine"/> after after every 
+    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
+    /// </param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when <paramref name="input"/> is <c>null</c>.
+    /// </exception>
     public static string Encode(Stream input, int wrap = 0)
     {
         if (input is null)
@@ -39,6 +73,16 @@ public static partial class Ecoji
         return writer.ToString();
     }
 
+    /// <summary>Encode a stream of data using emojis with optional wrapping.</summary>
+    /// <param name="input">The stream to encode.</param>
+    /// <param name="output">The stream to which encoded emojis will be written.</param>
+    /// <param name="wrap">
+    /// Insert <see cref="Environment.NewLine"/> after after every 
+    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
+    /// </param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when either <paramref name="input"/> or <paramref name="output"/> is <c>null</c>.
+    /// </exception>
     public static void Encode(Stream input, Stream output, int wrap = 0)
     {
         if (input is null)
@@ -50,6 +94,16 @@ public static partial class Ecoji
         Encode(input, new StreamWriter(output), wrap);
     }
 
+    /// <summary>Encode a stream of data using emojis with optional wrapping.</summary>
+    /// <param name="input">The stream to encode.</param>
+    /// <param name="output">The writer to which encoded emojis will be written.</param>
+    /// <param name="wrap">
+    /// Insert <see cref="Environment.NewLine"/> after after every 
+    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
+    /// </param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when either <paramref name="input"/> or <paramref name="output"/> is <c>null</c>.
+    /// </exception>
     public static void Encode(Stream input, TextWriter output, int wrap = 0)
     {
         if (input is null)
@@ -133,6 +187,22 @@ public static partial class Ecoji
         }
     }
 
+    /// <summary>Decode a string of ecoji emojis that encode a UTF-8 string.</summary>
+    /// <returns>The decoded string.</returns>
+    /// <param name="input">The ecoji-encoded string of emojis to decode.</param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when <paramref name="input"/> is <c>null</c>.
+    /// </exception>
+    /// <exception cref="UnexpectedEndOfInputException">
+    /// Thrown when the number of number of <paramref name="input"/>
+    /// code points is not a multiple of 4 or a low surrogate could
+    /// not be read after reading a high surrogate.
+    /// </exception>
+    /// <exception cref="InvalidCharacterException">
+    /// Thrown when an invalid ecoji alphabet code point is encountered.
+    /// The character may be a valid emoji, but is not part of the ecoji
+    /// encoding alphabet.
+    /// </exception>
     public static string DecodeUtf8(string input)
     {
         if (input is null)
@@ -141,6 +211,23 @@ public static partial class Ecoji
         return Decode(input, Encoding.UTF8);
     }
 
+    /// <summary>Decode a string of ecoji emojis that encode string in the provided encoding.</summary>
+    /// <returns>The decoded string.</returns>
+    /// <param name="input">The ecoji-encoded string of emojis to decode.</param>
+    /// <param name="encoding">The string encoding that represents the encoded data.</param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when either <paramref name="input"/> or <paramref name="encoding"/> is <c>null</c>.
+    /// </exception>
+    /// <exception cref="UnexpectedEndOfInputException">
+    /// Thrown when the number of number of <paramref name="input"/>
+    /// code points is not a multiple of 4 or a low surrogate could
+    /// not be read after reading a high surrogate.
+    /// </exception>
+    /// <exception cref="InvalidCharacterException">
+    /// Thrown when an invalid ecoji alphabet code point is encountered.
+    /// The character may be a valid emoji, but is not part of the ecoji
+    /// encoding alphabet.
+    /// </exception>
     public static string Decode(string input, Encoding encoding)
     {
         if (input is null)
@@ -152,6 +239,22 @@ public static partial class Ecoji
         return encoding.GetString(Decode(input));
     }
 
+    /// <summary>Decode ecoji emojis.</summary>
+    /// <returns>The decoded raw bytes.</returns>
+    /// <param name="input">The ecoji-encoded string of emojis to decode.</param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when <paramref name="input"/> is <c>null</c>.
+    /// </exception>
+    /// <exception cref="UnexpectedEndOfInputException">
+    /// Thrown when the number of number of <paramref name="input"/>
+    /// code points is not a multiple of 4 or a low surrogate could
+    /// not be read after reading a high surrogate.
+    /// </exception>
+    /// <exception cref="InvalidCharacterException">
+    /// Thrown when an invalid ecoji alphabet code point is encountered.
+    /// The character may be a valid emoji, but is not part of the ecoji
+    /// encoding alphabet.
+    /// </exception>
     public static byte[] Decode(string input)
     {
         if (input is null)
@@ -163,6 +266,22 @@ public static partial class Ecoji
         return stream.ToArray();
     }
 
+    /// <summary>Decode ecoji emojis.</summary>
+    /// <returns>The decoded raw bytes.</returns>
+    /// <param name="input">The stream from which ecoji-encoded data will be decoded.</param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when <paramref name="input"/> is <c>null</c>.
+    /// </exception>
+    /// <exception cref="UnexpectedEndOfInputException">
+    /// Thrown when the number of number of <paramref name="input"/>
+    /// code points is not a multiple of 4 or a low surrogate could
+    /// not be read after reading a high surrogate.
+    /// </exception>
+    /// <exception cref="InvalidCharacterException">
+    /// Thrown when an invalid ecoji alphabet code point is encountered.
+    /// The character may be a valid emoji, but is not part of the ecoji
+    /// encoding alphabet.
+    /// </exception>
     public static byte[] Decode(Stream input)
     {
         if (input is null)
@@ -173,6 +292,22 @@ public static partial class Ecoji
         return stream.ToArray();
     }
 
+    /// <summary>Decode ecoji emojis.</summary>
+    /// <param name="input">The stream from which ecoji-encoded data will be decoded.</param>
+    /// <param name="output">The stream to which decoded data will be written.</param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when <paramref name="input"/> is <c>null</c>.
+    /// </exception>
+    /// <exception cref="UnexpectedEndOfInputException">
+    /// Thrown when the number of number of <paramref name="input"/>
+    /// code points is not a multiple of 4 or a low surrogate could
+    /// not be read after reading a high surrogate.
+    /// </exception>
+    /// <exception cref="InvalidCharacterException">
+    /// Thrown when an invalid ecoji alphabet code point is encountered.
+    /// The character may be a valid emoji, but is not part of the ecoji
+    /// encoding alphabet.
+    /// </exception>
     public static void Decode(Stream input, Stream output)
     {
         if (input is null)
@@ -184,6 +319,22 @@ public static partial class Ecoji
         Decode(new StreamReader(input), output);
     }
 
+    /// <summary>Decode ecoji emojis.</summary>
+    /// <param name="input">The reader from which ecoji-encoded data will be decoded.</param>
+    /// <param name="output">The stream to which decoded data will be written.</param>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when <paramref name="input"/> is <c>null</c>.
+    /// </exception>
+    /// <exception cref="UnexpectedEndOfInputException">
+    /// Thrown when the number of number of <paramref name="input"/>
+    /// code points is not a multiple of 4 or a low surrogate could
+    /// not be read after reading a high surrogate.
+    /// </exception>
+    /// <exception cref="InvalidCharacterException">
+    /// Thrown when an invalid ecoji alphabet code point is encountered.
+    /// The character may be a valid emoji, but is not part of the ecoji
+    /// encoding alphabet.
+    /// </exception>
     public static void Decode(TextReader input, Stream output)
     {
         if (input is null)
