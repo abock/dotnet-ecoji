@@ -1,0 +1,9 @@
+- name: Home
+  href: /
+  homepage: index.md
+- name: API Documentation
+  href: api/Ecoji .NET.Ecoji.yml
+- name: GitHub
+  href: https://github.com/abock/dotnet-ecoji
+- name: NuGet
+  href: https://www.nuget.org/packages/dotnet-ecoji

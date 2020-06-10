@@ -1,0 +1,36 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ecoji .NET
+  id: Ecoji .NET
+  children:
+  - Ecoji .NET.Ecoji
+  - Ecoji .NET.Ecoji.InvalidCharacterException
+  - Ecoji .NET.Ecoji.UnexpectedEndOfInputException
+  langs:
+  - csharp
+  - vb
+  name: Ecoji .NET
+  nameWithType: Ecoji .NET
+  fullName: Ecoji .NET
+  type: Namespace
+  assemblies:
+  - Ecoji
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+references:
+- uid: Ecoji .NET.Ecoji
+  commentId: T:Ecoji .NET.Ecoji
+  name: Ecoji
+  nameWithType: Ecoji
+  fullName: Ecoji
+- uid: Ecoji .NET.Ecoji.InvalidCharacterException
+  commentId: T:Ecoji .NET.Ecoji.InvalidCharacterException
+  name: Ecoji.InvalidCharacterException
+  nameWithType: Ecoji.InvalidCharacterException
+  fullName: Ecoji.InvalidCharacterException
+- uid: Ecoji .NET.Ecoji.UnexpectedEndOfInputException
+  commentId: T:Ecoji .NET.Ecoji.UnexpectedEndOfInputException
+  name: Ecoji.UnexpectedEndOfInputException
+  nameWithType: Ecoji.UnexpectedEndOfInputException
+  fullName: Ecoji.UnexpectedEndOfInputException

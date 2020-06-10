@@ -1,0 +1,22 @@
+{{!Copyright (c) Oscar Vasquez. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}}</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}}">
+  <meta name="generator" content="docfx {{_docfxVersion}}">
+  <meta name="description" content="😻 Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. 🎉">
+  <meta name="twitter:image:src" content="{{_rel}}images/banner@2x.png" /><meta name="twitter:site" content="@abock" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Ecoji.NET" /><meta name="twitter:description" content="😻 Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. 🎉" />
+  <meta property="og:image" content="{{_rel}}images/banner@2x.png" /><meta property="og:site_name" content="Ecoji.NET" /><meta property="og:type" content="object" /><meta property="og:title" content="Ecoji.NET" /><meta property="og:url" content="https://abock.github.com/dotnet-ecoji" /><meta property="og:description" content="😻 Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. 🎉" />
+  <link rel="shortcut icon" href="{{_rel}}{{{_appFaviconPath}}}{{^_appFaviconPath}}favicon.ico{{/_appFaviconPath}}">
+  <link rel="stylesheet" href="{{_rel}}styles/docfx.vendor.css">
+  <link rel="stylesheet" href="{{_rel}}styles/docfx.css">
+  <link rel="stylesheet" href="{{_rel}}styles/main.css">
+  <meta property="docfx:navrel" content="{{_navRel}}">
+  <meta property="docfx:tocrel" content="{{_tocRel}}">
+  {{#_noindex}}<meta name="searchOption" content="noindex">{{/_noindex}}
+  {{#_enableSearch}}<meta property="docfx:rel" content="{{_rel}}">{{/_enableSearch}}
+  {{#_enableNewTab}}<meta property="docfx:newtab" content="true">{{/_enableNewTab}}
+</head>

@@ -1,0 +1,17 @@
+{
+  "Ecoji .NET": "Ecoji .NET.yml",
+  "Ecoji .NET.Ecoji": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Decode(Stream)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Decode(Stream,Stream)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Decode(System.String)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Decode(System.String,Encoding)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Decode(TextReader,Stream)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.DecodeUtf8(System.String)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Encode(Stream,Stream,System.Int32)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Encode(Stream,System.Int32)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Encode(Stream,TextWriter,System.Int32)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Encode(System.Byte[],System.Int32)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.Encode(System.String,System.Int32)": "Ecoji .NET.Ecoji.yml",
+  "Ecoji .NET.Ecoji.InvalidCharacterException": "Ecoji .NET.Ecoji.InvalidCharacterException.yml",
+  "Ecoji .NET.Ecoji.UnexpectedEndOfInputException": "Ecoji .NET.Ecoji.UnexpectedEndOfInputException.yml"
+}

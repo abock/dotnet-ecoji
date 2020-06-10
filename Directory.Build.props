@@ -15,6 +15,6 @@
     <PackageTags>emoji;ecoji;encoding;decoding;unicode;utf8;</PackageTags>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)img\icon.png" Pack="true" PackagePath="\"/>
+    <None Include="$(MSBuildThisFileDirectory)docfx\images\icon.png" Pack="true" PackagePath="\"/>
   </ItemGroup>
 </Project>

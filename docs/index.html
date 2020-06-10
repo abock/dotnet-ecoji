@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ecoji .NET: Encode Your Data With Emoji &#128571; | Ecoji .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Ecoji .NET: Encode Your Data With Emoji &#128571; | Ecoji .NET ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="description" content="😻 Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. 🎉">
+    <meta name="twitter:image:src" content="images/banner@2x.png"><meta name="twitter:site" content="@abock"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Ecoji.NET"><meta name="twitter:description" content="😻 Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. 🎉">
+    <meta property="og:image" content="images/banner@2x.png"><meta property="og:site_name" content="Ecoji.NET"><meta property="og:type" content="object"><meta property="og:title" content="Ecoji.NET"><meta property="og:url" content="https://abock.github.com/dotnet-ecoji"><meta property="og:description" content="😻 Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. 🎉">
+    <link rel="shortcut icon" href="images/icon@2x.png">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                <img src="images/header.png" srcset="images/header@2x.png 2x">
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+              </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ecoji-net-encode-your-data-with-emoji-">Ecoji .NET: Encode Your Data With Emoji 😻</h1>
+
+<p>Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. Ecoji .NET is a .NET Standard 2.0 implementation of <a href="https://github.com/keith-turner/ecoji">Keith Turner's Ecoji Standard</a>. In addition to the tiny <code>netstandard2.0</code> library, a .NET Core command line tool is available.</p>
+<h2 id="use-it-in-your-app">Use It In Your App</h2>
+<pre><code class="lang-bash">$ dotnet add package ecoji
+</code></pre>
+<h3 id="c-example">C# Example</h3>
+<pre><code class="lang-csharp">&gt; string encoded = Ecoji.Encode(&quot;Ecoji .NET&quot;)
+&quot;🏣🔉🦐🔼🍈😯🥀🐥&quot;
+
+&gt; Ecoji.Decode(&quot;🏣🔉🦐🔼🍈😯🥀🐥&quot;)
+&quot;Ecoji .NET&quot;
+</code></pre>
+<h2 id="install-the-command-line-tool">Install the Command Line Tool</h2>
+<pre><code class="lang-bash">$ dotnet tool install -g dotnet-ecoji
+</code></pre>
+<h3 id="example">Example</h3>
+<pre><code class="lang-bash">$ echo -m &quot;Ecoji .NET&quot; | ecoji
+🏣🔉🦐🔼🍈😯🥀🐥
+
+$ echo -n &quot;🏣🔉🦐🔼🍈😯🥀🐥&quot; | ecoji -d
+Ecoji .NET
+</code></pre>
+<h3 id="usage">Usage</h3>
+<pre><code class="lang-text">usage: ecoji [OPTIONS]... [FILE]
+
+Encode or decode data as Unicode emojis. 😻🍹
+
+Options:
+  -d, --decode               Decode data.
+  -w, --wrap=COLS            Wrap encoded lines after COLS characters
+                               (default 76). Use 0 to disable line
+                               wrapping.
+  -h, --help                 Print this message.
+  -v, --version              Print version information.
+</code></pre>
+<h2 id="build--contribute">Build &amp; Contribute</h2>
+<ul>
+<li><a href="https://dotnet.microsoft.com/download">Install .NET Core 3.1</a></li>
+<li>From the root of the checkout you may:
+<ul>
+<li>Run <code>dotnet build</code> to build everything</li>
+<li>Run <code>dotnet run -p src/Ecoji.CommandLineTool</code> to run the command line tool</li>
+<li>Run <code>dotnet test</code> to run the unit tests</li>
+</ul>
+</li>
+<li>Please file issues and pull requests if you feel so compelled! 🍿</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/abock/dotnet-ecoji/blob/master/docfx/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright 2020 Aaron Bockover
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

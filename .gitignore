@@ -1,6 +1,8 @@
 bin/
 obj/
+t/
 _artifacts/
+_nuget/
 .vscode/launch.json
 .vscode/tasks.json
 .vs/

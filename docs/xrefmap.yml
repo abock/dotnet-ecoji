@@ -1,0 +1,119 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Ecoji .NET
+  name: Ecoji .NET
+  href: api/Ecoji%20.NET.html
+  name.vb: ''
+  fullName: Ecoji .NET
+  fullName.vb: ''
+  nameWithType: Ecoji .NET
+  nameWithType.vb: ''
+- uid: Ecoji .NET.Ecoji
+  name: Ecoji
+  href: api/Ecoji%20.NET.Ecoji.html
+  commentId: T:Ecoji .NET.Ecoji
+  fullName: Ecoji
+  nameWithType: Ecoji
+- uid: Ecoji .NET.Ecoji.Decode(System.IO.Stream)
+  name: Decode(Stream)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Decode_System_IO_Stream_
+  commentId: M:Ecoji .NET.Ecoji.Decode(System.IO.Stream)
+  fullName: Ecoji.Decode(System.IO.Stream)
+  nameWithType: Ecoji.Decode(Stream)
+- uid: Ecoji .NET.Ecoji.Decode(System.IO.Stream,System.IO.Stream)
+  name: Decode(Stream, Stream)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Decode_System_IO_Stream_System_IO_Stream_
+  commentId: M:Ecoji .NET.Ecoji.Decode(System.IO.Stream,System.IO.Stream)
+  fullName: Ecoji.Decode(System.IO.Stream, System.IO.Stream)
+  nameWithType: Ecoji.Decode(Stream, Stream)
+- uid: Ecoji .NET.Ecoji.Decode(System.IO.TextReader,System.IO.Stream)
+  name: Decode(TextReader, Stream)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Decode_System_IO_TextReader_System_IO_Stream_
+  commentId: M:Ecoji .NET.Ecoji.Decode(System.IO.TextReader,System.IO.Stream)
+  fullName: Ecoji.Decode(System.IO.TextReader, System.IO.Stream)
+  nameWithType: Ecoji.Decode(TextReader, Stream)
+- uid: Ecoji .NET.Ecoji.Decode(System.String)
+  name: Decode(String)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Decode_System_String_
+  commentId: M:Ecoji .NET.Ecoji.Decode(System.String)
+  fullName: Ecoji.Decode(System.String)
+  nameWithType: Ecoji.Decode(String)
+- uid: Ecoji .NET.Ecoji.Decode(System.String,System.Text.Encoding)
+  name: Decode(String, Encoding)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Decode_System_String_System_Text_Encoding_
+  commentId: M:Ecoji .NET.Ecoji.Decode(System.String,System.Text.Encoding)
+  fullName: Ecoji.Decode(System.String, System.Text.Encoding)
+  nameWithType: Ecoji.Decode(String, Encoding)
+- uid: Ecoji .NET.Ecoji.Decode*
+  name: Decode
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Decode_
+  commentId: Overload:Ecoji .NET.Ecoji.Decode
+  isSpec: "True"
+  fullName: Ecoji.Decode
+  nameWithType: Ecoji.Decode
+- uid: Ecoji .NET.Ecoji.DecodeUtf8(System.String)
+  name: DecodeUtf8(String)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_DecodeUtf8_System_String_
+  commentId: M:Ecoji .NET.Ecoji.DecodeUtf8(System.String)
+  fullName: Ecoji.DecodeUtf8(System.String)
+  nameWithType: Ecoji.DecodeUtf8(String)
+- uid: Ecoji .NET.Ecoji.DecodeUtf8*
+  name: DecodeUtf8
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_DecodeUtf8_
+  commentId: Overload:Ecoji .NET.Ecoji.DecodeUtf8
+  isSpec: "True"
+  fullName: Ecoji.DecodeUtf8
+  nameWithType: Ecoji.DecodeUtf8
+- uid: Ecoji .NET.Ecoji.Encode(System.Byte[],System.Int32)
+  name: Encode(Byte[], Int32)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_Byte___System_Int32_
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.Byte[],System.Int32)
+  name.vb: Encode(Byte(), Int32)
+  fullName: Ecoji.Encode(System.Byte[], System.Int32)
+  fullName.vb: Ecoji.Encode(System.Byte(), System.Int32)
+  nameWithType: Ecoji.Encode(Byte[], Int32)
+  nameWithType.vb: Ecoji.Encode(Byte(), Int32)
+- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.Int32)
+  name: Encode(Stream, Int32)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_Int32_
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.Int32)
+  fullName: Ecoji.Encode(System.IO.Stream, System.Int32)
+  nameWithType: Ecoji.Encode(Stream, Int32)
+- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,System.Int32)
+  name: Encode(Stream, Stream, Int32)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_IO_Stream_System_Int32_
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,System.Int32)
+  fullName: Ecoji.Encode(System.IO.Stream, System.IO.Stream, System.Int32)
+  nameWithType: Ecoji.Encode(Stream, Stream, Int32)
+- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.TextWriter,System.Int32)
+  name: Encode(Stream, TextWriter, Int32)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_IO_TextWriter_System_Int32_
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.TextWriter,System.Int32)
+  fullName: Ecoji.Encode(System.IO.Stream, System.IO.TextWriter, System.Int32)
+  nameWithType: Ecoji.Encode(Stream, TextWriter, Int32)
+- uid: Ecoji .NET.Ecoji.Encode(System.String,System.Int32)
+  name: Encode(String, Int32)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_String_System_Int32_
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.String,System.Int32)
+  fullName: Ecoji.Encode(System.String, System.Int32)
+  nameWithType: Ecoji.Encode(String, Int32)
+- uid: Ecoji .NET.Ecoji.Encode*
+  name: Encode
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_
+  commentId: Overload:Ecoji .NET.Ecoji.Encode
+  isSpec: "True"
+  fullName: Ecoji.Encode
+  nameWithType: Ecoji.Encode
+- uid: Ecoji .NET.Ecoji.InvalidCharacterException
+  name: Ecoji.InvalidCharacterException
+  href: api/Ecoji%20.NET.Ecoji.InvalidCharacterException.html
+  commentId: T:Ecoji .NET.Ecoji.InvalidCharacterException
+  fullName: Ecoji.InvalidCharacterException
+  nameWithType: Ecoji.InvalidCharacterException
+- uid: Ecoji .NET.Ecoji.UnexpectedEndOfInputException
+  name: Ecoji.UnexpectedEndOfInputException
+  href: api/Ecoji%20.NET.Ecoji.UnexpectedEndOfInputException.html
+  commentId: T:Ecoji .NET.Ecoji.UnexpectedEndOfInputException
+  fullName: Ecoji.UnexpectedEndOfInputException
+  nameWithType: Ecoji.UnexpectedEndOfInputException

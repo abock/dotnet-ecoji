@@ -1,0 +1,929 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Ecoji
+   | Ecoji .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Ecoji
+   | Ecoji .NET ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="description" content="😻 Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. 🎉">
+    <meta name="twitter:image:src" content="../images/banner@2x.png"><meta name="twitter:site" content="@abock"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Ecoji.NET"><meta name="twitter:description" content="😻 Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. 🎉">
+    <meta property="og:image" content="../images/banner@2x.png"><meta property="og:site_name" content="Ecoji.NET"><meta property="og:type" content="object"><meta property="og:title" content="Ecoji.NET"><meta property="og:url" content="https://abock.github.com/dotnet-ecoji"><meta property="og:description" content="😻 Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. 🎉">
+    <link rel="shortcut icon" href="../images/icon@2x.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img src="../images/header.png" srcset="../images/header@2x.png 2x">
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+              </header>
+      <div role="main" class="container body-content hide-when-search">
+                <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ecoji .NET.Ecoji">
+  
+  
+  <h1 id="Ecoji__NET_Ecoji" data-uid="Ecoji .NET.Ecoji" class="text-break">Class Ecoji
+  </h1>
+  <div class="markdown level0 summary"><p>Encode and decode strings and arbitrary data using an alphabet of
+1024 emojis. Like a really colorful and expressive base64!</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Ecoji</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ecoji%20.NET.html">Ecoji .NET</a></h6>
+  <h6><strong>Assembly</strong>: Ecoji.dll</h6>
+  <h5 id="Ecoji__NET_Ecoji_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Ecoji</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Decode_System_IO_Stream_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Decode(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L285">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Decode_" data-uid="Ecoji .NET.Ecoji.Decode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Decode_System_IO_Stream_" data-uid="Ecoji .NET.Ecoji.Decode(System.IO.Stream)">Decode(Stream)</h4>
+  <div class="markdown level1 summary"><p>Decode ecoji emojis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Decode(Stream input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The stream from which ecoji-encoded data will be decoded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The decoded raw bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">input</code> is <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.UnexpectedEndOfInputException</span></td>
+        <td><p>Thrown when the number of number of <code data-dev-comment-type="paramref" class="paramref">input</code>
+code points is not a multiple of 4 or a low surrogate could
+not be read after reading a high surrogate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.InvalidCharacterException</span></td>
+        <td><p>Thrown when an invalid ecoji alphabet code point is encountered.
+The character may be a valid emoji, but is not part of the ecoji
+encoding alphabet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Decode_System_IO_Stream_System_IO_Stream_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Decode(System.IO.Stream%2CSystem.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L311">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Decode_" data-uid="Ecoji .NET.Ecoji.Decode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Decode_System_IO_Stream_System_IO_Stream_" data-uid="Ecoji .NET.Ecoji.Decode(System.IO.Stream,System.IO.Stream)">Decode(Stream, Stream)</h4>
+  <div class="markdown level1 summary"><p>Decode ecoji emojis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Decode(Stream input, Stream output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The stream from which ecoji-encoded data will be decoded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The stream to which decoded data will be written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">input</code> is <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.UnexpectedEndOfInputException</span></td>
+        <td><p>Thrown when the number of number of <code data-dev-comment-type="paramref" class="paramref">input</code>
+code points is not a multiple of 4 or a low surrogate could
+not be read after reading a high surrogate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.InvalidCharacterException</span></td>
+        <td><p>Thrown when an invalid ecoji alphabet code point is encountered.
+The character may be a valid emoji, but is not part of the ecoji
+encoding alphabet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Decode_System_IO_TextReader_System_IO_Stream_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Decode(System.IO.TextReader%2CSystem.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L338">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Decode_" data-uid="Ecoji .NET.Ecoji.Decode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Decode_System_IO_TextReader_System_IO_Stream_" data-uid="Ecoji .NET.Ecoji.Decode(System.IO.TextReader,System.IO.Stream)">Decode(TextReader, Stream)</h4>
+  <div class="markdown level1 summary"><p>Decode ecoji emojis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Decode(TextReader input, Stream output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.TextReader</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The reader from which ecoji-encoded data will be decoded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The stream to which decoded data will be written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">input</code> is <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.UnexpectedEndOfInputException</span></td>
+        <td><p>Thrown when the number of number of <code data-dev-comment-type="paramref" class="paramref">input</code>
+code points is not a multiple of 4 or a low surrogate could
+not be read after reading a high surrogate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.InvalidCharacterException</span></td>
+        <td><p>Thrown when an invalid ecoji alphabet code point is encountered.
+The character may be a valid emoji, but is not part of the ecoji
+encoding alphabet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Decode_System_String_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Decode(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L258">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Decode_" data-uid="Ecoji .NET.Ecoji.Decode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Decode_System_String_" data-uid="Ecoji .NET.Ecoji.Decode(System.String)">Decode(String)</h4>
+  <div class="markdown level1 summary"><p>Decode ecoji emojis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Decode(string input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The ecoji-encoded string of emojis to decode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The decoded raw bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">input</code> is <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.UnexpectedEndOfInputException</span></td>
+        <td><p>Thrown when the number of number of <code data-dev-comment-type="paramref" class="paramref">input</code>
+code points is not a multiple of 4 or a low surrogate could
+not be read after reading a high surrogate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.InvalidCharacterException</span></td>
+        <td><p>Thrown when an invalid ecoji alphabet code point is encountered.
+The character may be a valid emoji, but is not part of the ecoji
+encoding alphabet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Decode_System_String_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Decode(System.String%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L231">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Decode_" data-uid="Ecoji .NET.Ecoji.Decode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Decode_System_String_System_Text_Encoding_" data-uid="Ecoji .NET.Ecoji.Decode(System.String,System.Text.Encoding)">Decode(String, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Decode a string of ecoji emojis that encode string in the provided encoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Decode(string input, Encoding encoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The ecoji-encoded string of emojis to decode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>The string encoding that represents the encoded data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The decoded string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when either <code data-dev-comment-type="paramref" class="paramref">input</code> or <code data-dev-comment-type="paramref" class="paramref">encoding</code> is <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.UnexpectedEndOfInputException</span></td>
+        <td><p>Thrown when the number of number of <code data-dev-comment-type="paramref" class="paramref">input</code>
+code points is not a multiple of 4 or a low surrogate could
+not be read after reading a high surrogate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.InvalidCharacterException</span></td>
+        <td><p>Thrown when an invalid ecoji alphabet code point is encountered.
+The character may be a valid emoji, but is not part of the ecoji
+encoding alphabet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_DecodeUtf8_System_String_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.DecodeUtf8(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L206">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_DecodeUtf8_" data-uid="Ecoji .NET.Ecoji.DecodeUtf8*"></a>
+  <h4 id="Ecoji__NET_Ecoji_DecodeUtf8_System_String_" data-uid="Ecoji .NET.Ecoji.DecodeUtf8(System.String)">DecodeUtf8(String)</h4>
+  <div class="markdown level1 summary"><p>Decode a string of ecoji emojis that encode a UTF-8 string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string DecodeUtf8(string input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The ecoji-encoded string of emojis to decode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The decoded string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">input</code> is <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.UnexpectedEndOfInputException</span></td>
+        <td><p>Thrown when the number of number of <code data-dev-comment-type="paramref" class="paramref">input</code>
+code points is not a multiple of 4 or a low surrogate could
+not be read after reading a high surrogate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ecoji.InvalidCharacterException</span></td>
+        <td><p>Thrown when an invalid ecoji alphabet code point is encountered.
+The character may be a valid emoji, but is not part of the ecoji
+encoding alphabet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Encode_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Encode(System.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L47">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Encode_" data-uid="Ecoji .NET.Ecoji.Encode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Encode_System_Byte___System_Int32_" data-uid="Ecoji .NET.Ecoji.Encode(System.Byte[],System.Int32)">Encode(Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Encode data using emojis with optional wrapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Encode(byte[] input, int wrap = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The bytes to encode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">wrap</span></td>
+        <td><p>Insert <span class="xref">System.Environment.NewLine</span> after after every
+<code data-dev-comment-type="paramref" class="paramref">wrap</code> emojis. <code>0</code> disables wrapping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string of emojis encoding <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">input</code> is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_Int32_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Encode(System.IO.Stream%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L66">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Encode_" data-uid="Ecoji .NET.Ecoji.Encode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_Int32_" data-uid="Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.Int32)">Encode(Stream, Int32)</h4>
+  <div class="markdown level1 summary"><p>Encode a stream of data using emojis with optional wrapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Encode(Stream input, int wrap = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The stream to encode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">wrap</span></td>
+        <td><p>Insert <span class="xref">System.Environment.NewLine</span> after after every
+<code data-dev-comment-type="paramref" class="paramref">wrap</code> emojis. <code>0</code> disables wrapping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string of emojis encoding <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">input</code> is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_IO_Stream_System_Int32_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Encode(System.IO.Stream%2CSystem.IO.Stream%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L86">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Encode_" data-uid="Ecoji .NET.Ecoji.Encode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_IO_Stream_System_Int32_" data-uid="Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,System.Int32)">Encode(Stream, Stream, Int32)</h4>
+  <div class="markdown level1 summary"><p>Encode a stream of data using emojis with optional wrapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Encode(Stream input, Stream output, int wrap = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The stream to encode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The stream to which encoded emojis will be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">wrap</span></td>
+        <td><p>Insert <span class="xref">System.Environment.NewLine</span> after after every
+<code data-dev-comment-type="paramref" class="paramref">wrap</code> emojis. <code>0</code> disables wrapping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when either <code data-dev-comment-type="paramref" class="paramref">input</code> or <code data-dev-comment-type="paramref" class="paramref">output</code> is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_IO_TextWriter_System_Int32_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Encode(System.IO.Stream%2CSystem.IO.TextWriter%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L107">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Encode_" data-uid="Ecoji .NET.Ecoji.Encode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_IO_TextWriter_System_Int32_" data-uid="Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.TextWriter,System.Int32)">Encode(Stream, TextWriter, Int32)</h4>
+  <div class="markdown level1 summary"><p>Encode a stream of data using emojis with optional wrapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Encode(Stream input, TextWriter output, int wrap = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The stream to encode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The writer to which encoded emojis will be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">wrap</span></td>
+        <td><p>Insert <span class="xref">System.Environment.NewLine</span> after after every
+<code data-dev-comment-type="paramref" class="paramref">wrap</code> emojis. <code>0</code> disables wrapping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when either <code data-dev-comment-type="paramref" class="paramref">input</code> or <code data-dev-comment-type="paramref" class="paramref">output</code> is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji_Encode_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji.Encode(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.cs/#L29">View Source</a>
+  </span>
+  <a id="Ecoji__NET_Ecoji_Encode_" data-uid="Ecoji .NET.Ecoji.Encode*"></a>
+  <h4 id="Ecoji__NET_Ecoji_Encode_System_String_System_Int32_" data-uid="Ecoji .NET.Ecoji.Encode(System.String,System.Int32)">Encode(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Encode a UTF-8 string using emojis with optional wrapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Encode(string input, int wrap = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The string to encode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">wrap</span></td>
+        <td><p>Insert <span class="xref">System.Environment.NewLine</span> after after every
+<code data-dev-comment-type="paramref" class="paramref">wrap</code> emojis. <code>0</code> disables wrapping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string of emojis encoding <code data-dev-comment-type="paramref" class="paramref">input</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">input</code> is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/abock/dotnet-ecoji/new/master/apiSpec/new?filename=Ecoji__NET_Ecoji.md&amp;value=---%0Auid%3A%20Ecoji%20.NET.Ecoji%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/abock/dotnet-ecoji/blob/master/src/Ecoji/Ecoji.Table.g.cs/#L5" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright 2020 Aaron Bockover
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
