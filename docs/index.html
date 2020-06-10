@@ -53,7 +53,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="ecoji-net-encode-your-data-with-emoji-">Ecoji .NET: Encode Your Data With Emoji 😻</h1>
 
-<p>Encode and decode data using emoji in .NET❣️ Like base64, except base1024, and uses an emoji alphabet. Ecoji .NET is a .NET Standard 2.0 implementation of <a href="https://github.com/keith-turner/ecoji">Keith Turner's Ecoji Standard</a>. In addition to the tiny <code>netstandard2.0</code> library, a .NET Core command line tool is available.</p>
+<p>Encode and decode data using emoji in .NET. Like base64, except base1024, and uses an emoji alphabet. Ecoji .NET is a .NET Standard 2.0 implementation of <a href="https://github.com/keith-turner/ecoji">Keith Turner's Ecoji Standard</a>. In addition to the tiny <code>netstandard2.0</code> library, a .NET Core command line tool is available.</p>
 <h2 id="use-it-in-your-app">Use It In Your App</h2>
 <pre><code class="lang-bash">$ dotnet add package ecoji
 </code></pre>
@@ -61,7 +61,7 @@
 <pre><code class="lang-csharp">&gt; string encoded = Ecoji.Encode(&quot;Ecoji .NET&quot;)
 &quot;🏣🔉🦐🔼🍈😯🥀🐥&quot;
 
-&gt; Ecoji.Decode(&quot;🏣🔉🦐🔼🍈😯🥀🐥&quot;)
+&gt; Ecoji.DecodeUtf8(&quot;🏣🔉🦐🔼🍈😯🥀🐥&quot;)
 &quot;Ecoji .NET&quot;
 </code></pre>
 <h2 id="install-the-command-line-tool">Install the Command Line Tool</h2>
@@ -87,18 +87,6 @@ Options:
   -h, --help                 Print this message.
   -v, --version              Print version information.
 </code></pre>
-<h2 id="build--contribute">Build &amp; Contribute</h2>
-<ul>
-<li><a href="https://dotnet.microsoft.com/download">Install .NET Core 3.1</a></li>
-<li>From the root of the checkout you may:
-<ul>
-<li>Run <code>dotnet build</code> to build everything</li>
-<li>Run <code>dotnet run -p src/Ecoji.CommandLineTool</code> to run the command line tool</li>
-<li>Run <code>dotnet test</code> to run the unit tests</li>
-</ul>
-</li>
-<li>Please file issues and pull requests if you feel so compelled! 🍿</li>
-</ul>
 </article>
           </div>
           
