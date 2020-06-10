@@ -33,4 +33,4 @@ $ dotnet tool install -g dotnet-ecoji
 * Please file issues and pull requests if you feel so compelled! 🍿
 
 
-[docsite]: https://abock.github.com/dotnet-ecoji
+[docsite]: https://ecoji.dev
