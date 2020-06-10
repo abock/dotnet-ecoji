@@ -1,4 +1,4 @@
-![Encode Your Data With Emoji](docfx/images/banner@2x.png)
+[![Encode Your Data With Emoji](docfx/images/banner@2x.png)][docsite]
 
 ![.NET Core](https://github.com/abock/dotnet-ecoji/workflows/.NET%20Core/badge.svg)
 [![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](LICENSE)
