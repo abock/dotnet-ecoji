@@ -11,11 +11,11 @@ items:
   - Ecoji .NET.Ecoji.Decode(System.String)
   - Ecoji .NET.Ecoji.Decode(System.String,System.Text.Encoding)
   - Ecoji .NET.Ecoji.DecodeUtf8(System.String)
-  - Ecoji .NET.Ecoji.Encode(System.Byte[],System.Int32)
-  - Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.Int32)
-  - Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,System.Int32)
+  - Ecoji .NET.Ecoji.Encode(System.Byte[],Ecoji.EncodingOptions)
+  - Ecoji .NET.Ecoji.Encode(System.IO.Stream,Ecoji.EncodingOptions)
+  - Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,Ecoji.EncodingOptions)
   - Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.TextWriter,System.Int32)
-  - Ecoji .NET.Ecoji.Encode(System.String,System.Int32)
+  - Ecoji .NET.Ecoji.Encode(System.String,Ecoji.EncodingOptions)
   langs:
   - csharp
   - vb
@@ -48,16 +48,16 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Ecoji .NET.Ecoji.Encode(System.String,System.Int32)
-  commentId: M:Ecoji .NET.Ecoji.Encode(System.String,System.Int32)
-  id: Encode(System.String,System.Int32)
+- uid: Ecoji .NET.Ecoji.Encode(System.String,Ecoji.EncodingOptions)
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.String,Ecoji.EncodingOptions)
+  id: Encode(System.String,Ecoji.EncodingOptions)
   parent: Ecoji .NET.Ecoji
   langs:
   - csharp
   - vb
-  name: Encode(String, Int32)
-  nameWithType: Ecoji.Encode(String, Int32)
-  fullName: Ecoji.Encode(System.String, System.Int32)
+  name: Encode(String, Ecoji.EncodingOptions)
+  nameWithType: Ecoji.Encode(String, Ecoji.EncodingOptions)
+  fullName: Ecoji.Encode(System.String, Ecoji.EncodingOptions)
   type: Method
   source:
     remote:
@@ -66,25 +66,25 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Encode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 28
+    startLine: 87
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
   summary: Encode a UTF-8 string using emojis with optional wrapping.
   example: []
   syntax:
-    content: public static string Encode(string input, int wrap = 0)
+    content: public static string Encode(string input, Ecoji.EncodingOptions options = default(Ecoji.EncodingOptions))
     parameters:
     - id: input
       type: System.String
       description: The string to encode.
-    - id: wrap
-      type: System.Int32
-      description: "\nInsert <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref> after after every \n<code data-dev-comment-type=\"paramref\" class=\"paramref\">wrap</code> emojis. <code>0</code> disables wrapping.\n"
+    - id: options
+      type: Ecoji .NET.Ecoji.EncodingOptions
+      description: Options to use to customize the ecoji output.
     return:
       type: System.String
       description: A string of emojis encoding <code data-dev-comment-type="paramref" class="paramref">input</code>.
-    content.vb: Public Shared Function Encode(input As String, wrap As Integer = 0) As String
+    content.vb: Public Shared Function Encode(input As String, options As Ecoji.EncodingOptions = Nothing) As String
   overload: Ecoji .NET.Ecoji.Encode*
   exceptions:
   - type: System.ArgumentNullException
@@ -96,16 +96,16 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: Ecoji .NET.Ecoji.Encode(System.Byte[],System.Int32)
-  commentId: M:Ecoji .NET.Ecoji.Encode(System.Byte[],System.Int32)
-  id: Encode(System.Byte[],System.Int32)
+- uid: Ecoji .NET.Ecoji.Encode(System.Byte[],Ecoji.EncodingOptions)
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.Byte[],Ecoji.EncodingOptions)
+  id: Encode(System.Byte[],Ecoji.EncodingOptions)
   parent: Ecoji .NET.Ecoji
   langs:
   - csharp
   - vb
-  name: Encode(Byte[], Int32)
-  nameWithType: Ecoji.Encode(Byte[], Int32)
-  fullName: Ecoji.Encode(System.Byte[], System.Int32)
+  name: Encode(Byte[], Ecoji.EncodingOptions)
+  nameWithType: Ecoji.Encode(Byte[], Ecoji.EncodingOptions)
+  fullName: Ecoji.Encode(System.Byte[], Ecoji.EncodingOptions)
   type: Method
   source:
     remote:
@@ -114,49 +114,49 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Encode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 46
+    startLine: 102
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
   summary: Encode data using emojis with optional wrapping.
   example: []
   syntax:
-    content: public static string Encode(byte[] input, int wrap = 0)
+    content: public static string Encode(byte[] input, Ecoji.EncodingOptions options = default(Ecoji.EncodingOptions))
     parameters:
     - id: input
       type: System.Byte[]
       description: The bytes to encode.
-    - id: wrap
-      type: System.Int32
-      description: "\nInsert <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref> after after every \n<code data-dev-comment-type=\"paramref\" class=\"paramref\">wrap</code> emojis. <code>0</code> disables wrapping.\n"
+    - id: options
+      type: Ecoji .NET.Ecoji.EncodingOptions
+      description: Options to use to customize the ecoji output.
     return:
       type: System.String
       description: A string of emojis encoding <code data-dev-comment-type="paramref" class="paramref">input</code>.
-    content.vb: Public Shared Function Encode(input As Byte(), wrap As Integer = 0) As String
+    content.vb: Public Shared Function Encode(input As Byte(), options As Ecoji.EncodingOptions = Nothing) As String
   overload: Ecoji .NET.Ecoji.Encode*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: "\nThrown when <code data-dev-comment-type=\"paramref\" class=\"paramref\">input</code> is <code>null</code>.\n"
-  nameWithType.vb: Ecoji.Encode(Byte(), Int32)
+  nameWithType.vb: Ecoji.Encode(Byte(), Ecoji.EncodingOptions)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Ecoji.Encode(System.Byte(), System.Int32)
-  name.vb: Encode(Byte(), Int32)
-- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.Int32)
-  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.Int32)
-  id: Encode(System.IO.Stream,System.Int32)
+  fullName.vb: Ecoji.Encode(System.Byte(), Ecoji.EncodingOptions)
+  name.vb: Encode(Byte(), Ecoji.EncodingOptions)
+- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,Ecoji.EncodingOptions)
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,Ecoji.EncodingOptions)
+  id: Encode(System.IO.Stream,Ecoji.EncodingOptions)
   parent: Ecoji .NET.Ecoji
   langs:
   - csharp
   - vb
-  name: Encode(Stream, Int32)
-  nameWithType: Ecoji.Encode(Stream, Int32)
-  fullName: Ecoji.Encode(System.IO.Stream, System.Int32)
+  name: Encode(Stream, Ecoji.EncodingOptions)
+  nameWithType: Ecoji.Encode(Stream, Ecoji.EncodingOptions)
+  fullName: Ecoji.Encode(System.IO.Stream, Ecoji.EncodingOptions)
   type: Method
   source:
     remote:
@@ -165,25 +165,25 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Encode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 65
+    startLine: 118
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
   summary: Encode a stream of data using emojis with optional wrapping.
   example: []
   syntax:
-    content: public static string Encode(Stream input, int wrap = 0)
+    content: public static string Encode(Stream input, Ecoji.EncodingOptions options = default(Ecoji.EncodingOptions))
     parameters:
     - id: input
       type: System.IO.Stream
       description: The stream to encode.
-    - id: wrap
-      type: System.Int32
-      description: "\nInsert <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref> after after every \n<code data-dev-comment-type=\"paramref\" class=\"paramref\">wrap</code> emojis. <code>0</code> disables wrapping.\n"
+    - id: options
+      type: Ecoji .NET.Ecoji.EncodingOptions
+      description: Options to use to customize the ecoji output.
     return:
       type: System.String
       description: A string of emojis encoding <code data-dev-comment-type="paramref" class="paramref">input</code>.
-    content.vb: Public Shared Function Encode(input As Stream, wrap As Integer = 0) As String
+    content.vb: Public Shared Function Encode(input As Stream, options As Ecoji.EncodingOptions = Nothing) As String
   overload: Ecoji .NET.Ecoji.Encode*
   exceptions:
   - type: System.ArgumentNullException
@@ -195,16 +195,16 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,System.Int32)
-  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,System.Int32)
-  id: Encode(System.IO.Stream,System.IO.Stream,System.Int32)
+- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,Ecoji.EncodingOptions)
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,Ecoji.EncodingOptions)
+  id: Encode(System.IO.Stream,System.IO.Stream,Ecoji.EncodingOptions)
   parent: Ecoji .NET.Ecoji
   langs:
   - csharp
   - vb
-  name: Encode(Stream, Stream, Int32)
-  nameWithType: Ecoji.Encode(Stream, Stream, Int32)
-  fullName: Ecoji.Encode(System.IO.Stream, System.IO.Stream, System.Int32)
+  name: Encode(Stream, Stream, Ecoji.EncodingOptions)
+  nameWithType: Ecoji.Encode(Stream, Stream, Ecoji.EncodingOptions)
+  fullName: Ecoji.Encode(System.IO.Stream, System.IO.Stream, Ecoji.EncodingOptions)
   type: Method
   source:
     remote:
@@ -213,14 +213,14 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Encode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 85
+    startLine: 136
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
   summary: Encode a stream of data using emojis with optional wrapping.
   example: []
   syntax:
-    content: public static void Encode(Stream input, Stream output, int wrap = 0)
+    content: public static void Encode(Stream input, Stream output, Ecoji.EncodingOptions options = default(Ecoji.EncodingOptions))
     parameters:
     - id: input
       type: System.IO.Stream
@@ -228,10 +228,10 @@ items:
     - id: output
       type: System.IO.Stream
       description: The stream to which encoded emojis will be written.
-    - id: wrap
-      type: System.Int32
-      description: "\nInsert <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref> after after every \n<code data-dev-comment-type=\"paramref\" class=\"paramref\">wrap</code> emojis. <code>0</code> disables wrapping.\n"
-    content.vb: Public Shared Sub Encode(input As Stream, output As Stream, wrap As Integer = 0)
+    - id: options
+      type: Ecoji .NET.Ecoji.EncodingOptions
+      description: Options to use to customize the ecoji output.
+    content.vb: Public Shared Sub Encode(input As Stream, output As Stream, options As Ecoji.EncodingOptions = Nothing)
   overload: Ecoji .NET.Ecoji.Encode*
   exceptions:
   - type: System.ArgumentNullException
@@ -261,7 +261,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Encode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 106
+    startLine: 165
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -278,7 +278,7 @@ items:
       description: The writer to which encoded emojis will be written.
     - id: wrap
       type: System.Int32
-      description: "\nInsert <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref> after after every \n<code data-dev-comment-type=\"paramref\" class=\"paramref\">wrap</code> emojis. <code>0</code> disables wrapping.\n"
+      description: "\nInsert <xref href=\"System.IO.TextWriter.NewLine\" data-throw-if-not-resolved=\"false\"></xref> set on <code data-dev-comment-type=\"paramref\" class=\"paramref\">output</code> after\nafter every <code data-dev-comment-type=\"paramref\" class=\"paramref\">wrap</code> emojis. <code>0</code> disables wrapping.\n"
     content.vb: Public Shared Sub Encode(input As Stream, output As TextWriter, wrap As Integer = 0)
   overload: Ecoji .NET.Ecoji.Encode*
   exceptions:
@@ -309,7 +309,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: DecodeUtf8
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 205
+    startLine: 264
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -360,7 +360,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 230
+    startLine: 289
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -414,7 +414,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 257
+    startLine: 316
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -465,7 +465,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 284
+    startLine: 343
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -516,7 +516,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 310
+    startLine: 369
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -567,7 +567,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 337
+    startLine: 396
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -621,9 +621,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Environment.NewLine
-  commentId: P:System.Environment.NewLine
-  isExternal: true
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
   isExternal: true
@@ -639,13 +636,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
+- uid: Ecoji .NET.Ecoji.EncodingOptions
+  commentId: T:Ecoji .NET.Ecoji.EncodingOptions
+  name: Ecoji.EncodingOptions
+  nameWithType: Ecoji.EncodingOptions
+  fullName: Ecoji.EncodingOptions
 - uid: System.Byte[]
   isExternal: true
   name: Byte[]
@@ -685,6 +680,9 @@ references:
   name: System.IO
   nameWithType: System.IO
   fullName: System.IO
+- uid: System.IO.TextWriter.NewLine
+  commentId: P:System.IO.TextWriter.NewLine
+  isExternal: true
 - uid: System.IO.TextWriter
   commentId: T:System.IO.TextWriter
   parent: System.IO
@@ -692,6 +690,13 @@ references:
   name: TextWriter
   nameWithType: TextWriter
   fullName: System.IO.TextWriter
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Ecoji.UnexpectedEndOfInputException
   commentId: T:Ecoji.UnexpectedEndOfInputException
   isExternal: true

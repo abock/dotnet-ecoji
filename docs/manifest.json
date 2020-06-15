@@ -5,11 +5,23 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ecoji .NET.Ecoji.EncodingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ecoji .NET.Ecoji.EncodingOptions.html",
+          "hash": "88imd1HwneaxBmzoWtevGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ecoji .NET.Ecoji.InvalidCharacterException.yml",
       "output": {
         ".html": {
           "relative_path": "api/Ecoji .NET.Ecoji.InvalidCharacterException.html",
-          "hash": "73A+VrQm9QWF8O1LQKXkiA=="
+          "hash": "9VMN/l4rtszencU0NJSBPA=="
         }
       },
       "is_incremental": true,
@@ -21,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ecoji .NET.Ecoji.UnexpectedEndOfInputException.html",
-          "hash": "lagOvZbqUQZqjothk51c0w=="
+          "hash": "AM5vpAZ5/eB0DYArRQzJ5w=="
         }
       },
       "is_incremental": true,
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ecoji .NET.Ecoji.html",
-          "hash": "T7Y1KN1vPmond7aWfnDKtw=="
+          "hash": "jnYpZM01iJxsBVSIgKcPiA=="
         }
       },
       "is_incremental": true,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ecoji .NET.html",
-          "hash": "gD7E56DkQ4ie/CI5Ewu75A=="
+          "hash": "2LWvJXFfaovRtI0VykWamA=="
         }
       },
       "is_incremental": true,
@@ -57,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "i3GUZg9PDuHE5KBjj/Wd3w=="
+          "hash": "FkKkglsnrzuEMXdqWSJK9A=="
         }
       },
       "is_incremental": true,
@@ -69,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "MKn7a/X9218d+x1ENLmVOA=="
+          "hash": "Rd4l/cSa+3DfpT/u3LRk2A=="
         }
       },
       "is_incremental": false,
@@ -224,7 +236,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "moFkBg5d5GkX/nEz3Njz4A=="
+          "hash": "Bv9yXRNDCWsK1uUEZvGoPQ=="
         }
       },
       "is_incremental": true,
@@ -261,8 +273,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 4
+          "total_file_count": 5,
+          "skipped_file_count": 5
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

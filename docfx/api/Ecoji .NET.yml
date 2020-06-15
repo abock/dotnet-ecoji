@@ -4,6 +4,7 @@ items:
   id: Ecoji .NET
   children:
   - Ecoji .NET.Ecoji
+  - Ecoji .NET.Ecoji.EncodingOptions
   - Ecoji .NET.Ecoji.InvalidCharacterException
   - Ecoji .NET.Ecoji.UnexpectedEndOfInputException
   langs:
@@ -24,6 +25,11 @@ references:
   name: Ecoji
   nameWithType: Ecoji
   fullName: Ecoji
+- uid: Ecoji .NET.Ecoji.EncodingOptions
+  commentId: T:Ecoji .NET.Ecoji.EncodingOptions
+  name: Ecoji.EncodingOptions
+  nameWithType: Ecoji.EncodingOptions
+  fullName: Ecoji.EncodingOptions
 - uid: Ecoji .NET.Ecoji.InvalidCharacterException
   commentId: T:Ecoji .NET.Ecoji.InvalidCharacterException
   name: Ecoji.InvalidCharacterException

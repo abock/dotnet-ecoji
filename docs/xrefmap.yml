@@ -65,39 +65,39 @@ references:
   isSpec: "True"
   fullName: Ecoji.DecodeUtf8
   nameWithType: Ecoji.DecodeUtf8
-- uid: Ecoji .NET.Ecoji.Encode(System.Byte[],System.Int32)
-  name: Encode(Byte[], Int32)
-  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_Byte___System_Int32_
-  commentId: M:Ecoji .NET.Ecoji.Encode(System.Byte[],System.Int32)
-  name.vb: Encode(Byte(), Int32)
-  fullName: Ecoji.Encode(System.Byte[], System.Int32)
-  fullName.vb: Ecoji.Encode(System.Byte(), System.Int32)
-  nameWithType: Ecoji.Encode(Byte[], Int32)
-  nameWithType.vb: Ecoji.Encode(Byte(), Int32)
-- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.Int32)
-  name: Encode(Stream, Int32)
-  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_Int32_
-  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.Int32)
-  fullName: Ecoji.Encode(System.IO.Stream, System.Int32)
-  nameWithType: Ecoji.Encode(Stream, Int32)
-- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,System.Int32)
-  name: Encode(Stream, Stream, Int32)
-  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_IO_Stream_System_Int32_
-  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,System.Int32)
-  fullName: Ecoji.Encode(System.IO.Stream, System.IO.Stream, System.Int32)
-  nameWithType: Ecoji.Encode(Stream, Stream, Int32)
+- uid: Ecoji .NET.Ecoji.Encode(System.Byte[],Ecoji.EncodingOptions)
+  name: Encode(Byte[], Ecoji.EncodingOptions)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_Byte___Ecoji_EncodingOptions_
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.Byte[],Ecoji.EncodingOptions)
+  name.vb: Encode(Byte(), Ecoji.EncodingOptions)
+  fullName: Ecoji.Encode(System.Byte[], Ecoji.EncodingOptions)
+  fullName.vb: Ecoji.Encode(System.Byte(), Ecoji.EncodingOptions)
+  nameWithType: Ecoji.Encode(Byte[], Ecoji.EncodingOptions)
+  nameWithType.vb: Ecoji.Encode(Byte(), Ecoji.EncodingOptions)
+- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,Ecoji.EncodingOptions)
+  name: Encode(Stream, Ecoji.EncodingOptions)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_IO_Stream_Ecoji_EncodingOptions_
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,Ecoji.EncodingOptions)
+  fullName: Ecoji.Encode(System.IO.Stream, Ecoji.EncodingOptions)
+  nameWithType: Ecoji.Encode(Stream, Ecoji.EncodingOptions)
+- uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,Ecoji.EncodingOptions)
+  name: Encode(Stream, Stream, Ecoji.EncodingOptions)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_IO_Stream_Ecoji_EncodingOptions_
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.Stream,Ecoji.EncodingOptions)
+  fullName: Ecoji.Encode(System.IO.Stream, System.IO.Stream, Ecoji.EncodingOptions)
+  nameWithType: Ecoji.Encode(Stream, Stream, Ecoji.EncodingOptions)
 - uid: Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.TextWriter,System.Int32)
   name: Encode(Stream, TextWriter, Int32)
   href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_IO_Stream_System_IO_TextWriter_System_Int32_
   commentId: M:Ecoji .NET.Ecoji.Encode(System.IO.Stream,System.IO.TextWriter,System.Int32)
   fullName: Ecoji.Encode(System.IO.Stream, System.IO.TextWriter, System.Int32)
   nameWithType: Ecoji.Encode(Stream, TextWriter, Int32)
-- uid: Ecoji .NET.Ecoji.Encode(System.String,System.Int32)
-  name: Encode(String, Int32)
-  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_String_System_Int32_
-  commentId: M:Ecoji .NET.Ecoji.Encode(System.String,System.Int32)
-  fullName: Ecoji.Encode(System.String, System.Int32)
-  nameWithType: Ecoji.Encode(String, Int32)
+- uid: Ecoji .NET.Ecoji.Encode(System.String,Ecoji.EncodingOptions)
+  name: Encode(String, Ecoji.EncodingOptions)
+  href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_System_String_Ecoji_EncodingOptions_
+  commentId: M:Ecoji .NET.Ecoji.Encode(System.String,Ecoji.EncodingOptions)
+  fullName: Ecoji.Encode(System.String, Ecoji.EncodingOptions)
+  nameWithType: Ecoji.Encode(String, Ecoji.EncodingOptions)
 - uid: Ecoji .NET.Ecoji.Encode*
   name: Encode
   href: api/Ecoji%20.NET.Ecoji.html#Ecoji__NET_Ecoji_Encode_
@@ -105,6 +105,102 @@ references:
   isSpec: "True"
   fullName: Ecoji.Encode
   nameWithType: Ecoji.Encode
+- uid: Ecoji .NET.Ecoji.EncodingOptions
+  name: Ecoji.EncodingOptions
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html
+  commentId: T:Ecoji .NET.Ecoji.EncodingOptions
+  fullName: Ecoji.EncodingOptions
+  nameWithType: Ecoji.EncodingOptions
+- uid: Ecoji .NET.Ecoji.EncodingOptions.#ctor(System.Int32,System.String)
+  name: EncodingOptions(Int32, String)
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions__ctor_System_Int32_System_String_
+  commentId: M:Ecoji .NET.Ecoji.EncodingOptions.#ctor(System.Int32,System.String)
+  fullName: Ecoji.EncodingOptions.EncodingOptions(System.Int32, System.String)
+  nameWithType: Ecoji.EncodingOptions.EncodingOptions(Int32, String)
+- uid: Ecoji .NET.Ecoji.EncodingOptions.#ctor*
+  name: EncodingOptions
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions__ctor_
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.#ctor
+  isSpec: "True"
+  fullName: Ecoji.EncodingOptions.EncodingOptions
+  nameWithType: Ecoji.EncodingOptions.EncodingOptions
+- uid: Ecoji .NET.Ecoji.EncodingOptions.Default
+  name: Default
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_Default
+  commentId: F:Ecoji .NET.Ecoji.EncodingOptions.Default
+  fullName: Ecoji.EncodingOptions.Default
+  nameWithType: Ecoji.EncodingOptions.Default
+- uid: Ecoji .NET.Ecoji.EncodingOptions.NewLine
+  name: NewLine
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_NewLine
+  commentId: P:Ecoji .NET.Ecoji.EncodingOptions.NewLine
+  fullName: Ecoji.EncodingOptions.NewLine
+  nameWithType: Ecoji.EncodingOptions.NewLine
+- uid: Ecoji .NET.Ecoji.EncodingOptions.NewLine*
+  name: NewLine
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_NewLine_
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.NewLine
+  isSpec: "True"
+  fullName: Ecoji.EncodingOptions.NewLine
+  nameWithType: Ecoji.EncodingOptions.NewLine
+- uid: Ecoji .NET.Ecoji.EncodingOptions.op_Implicit(System.Int32)~Ecoji.EncodingOptions
+  name: Implicit(Int32 to Ecoji.EncodingOptions)
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_op_Implicit_System_Int32__Ecoji_EncodingOptions
+  commentId: M:Ecoji .NET.Ecoji.EncodingOptions.op_Implicit(System.Int32)~Ecoji.EncodingOptions
+  name.vb: Widening(Int32 to Ecoji.EncodingOptions)
+  fullName: Ecoji.EncodingOptions.Implicit(System.Int32 to Ecoji.EncodingOptions)
+  fullName.vb: Ecoji.EncodingOptions.Widening(System.Int32 to Ecoji.EncodingOptions)
+  nameWithType: Ecoji.EncodingOptions.Implicit(Int32 to Ecoji.EncodingOptions)
+  nameWithType.vb: Ecoji.EncodingOptions.Widening(Int32 to Ecoji.EncodingOptions)
+- uid: Ecoji .NET.Ecoji.EncodingOptions.op_Implicit*
+  name: Implicit
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_op_Implicit_
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Ecoji.EncodingOptions.Implicit
+  fullName.vb: Ecoji.EncodingOptions.Widening
+  nameWithType: Ecoji.EncodingOptions.Implicit
+  nameWithType.vb: Ecoji.EncodingOptions.Widening
+- uid: Ecoji .NET.Ecoji.EncodingOptions.WithNewLine(System.String)
+  name: WithNewLine(String)
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_WithNewLine_System_String_
+  commentId: M:Ecoji .NET.Ecoji.EncodingOptions.WithNewLine(System.String)
+  fullName: Ecoji.EncodingOptions.WithNewLine(System.String)
+  nameWithType: Ecoji.EncodingOptions.WithNewLine(String)
+- uid: Ecoji .NET.Ecoji.EncodingOptions.WithNewLine*
+  name: WithNewLine
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_WithNewLine_
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.WithNewLine
+  isSpec: "True"
+  fullName: Ecoji.EncodingOptions.WithNewLine
+  nameWithType: Ecoji.EncodingOptions.WithNewLine
+- uid: Ecoji .NET.Ecoji.EncodingOptions.WithWrap(System.Int32)
+  name: WithWrap(Int32)
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_WithWrap_System_Int32_
+  commentId: M:Ecoji .NET.Ecoji.EncodingOptions.WithWrap(System.Int32)
+  fullName: Ecoji.EncodingOptions.WithWrap(System.Int32)
+  nameWithType: Ecoji.EncodingOptions.WithWrap(Int32)
+- uid: Ecoji .NET.Ecoji.EncodingOptions.WithWrap*
+  name: WithWrap
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_WithWrap_
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.WithWrap
+  isSpec: "True"
+  fullName: Ecoji.EncodingOptions.WithWrap
+  nameWithType: Ecoji.EncodingOptions.WithWrap
+- uid: Ecoji .NET.Ecoji.EncodingOptions.Wrap
+  name: Wrap
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_Wrap
+  commentId: P:Ecoji .NET.Ecoji.EncodingOptions.Wrap
+  fullName: Ecoji.EncodingOptions.Wrap
+  nameWithType: Ecoji.EncodingOptions.Wrap
+- uid: Ecoji .NET.Ecoji.EncodingOptions.Wrap*
+  name: Wrap
+  href: api/Ecoji%20.NET.Ecoji.EncodingOptions.html#Ecoji__NET_Ecoji_EncodingOptions_Wrap_
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.Wrap
+  isSpec: "True"
+  fullName: Ecoji.EncodingOptions.Wrap
+  nameWithType: Ecoji.EncodingOptions.Wrap
 - uid: Ecoji .NET.Ecoji.InvalidCharacterException
   name: Ecoji.InvalidCharacterException
   href: api/Ecoji%20.NET.Ecoji.InvalidCharacterException.html

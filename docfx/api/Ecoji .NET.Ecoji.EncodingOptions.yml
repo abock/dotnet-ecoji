@@ -1,0 +1,492 @@
+### YamlMime:ManagedReference
+items:
+- uid: Ecoji .NET.Ecoji.EncodingOptions
+  commentId: T:Ecoji .NET.Ecoji.EncodingOptions
+  id: Ecoji.EncodingOptions
+  parent: Ecoji .NET
+  children:
+  - Ecoji .NET.Ecoji.EncodingOptions.#ctor(System.Int32,System.String)
+  - Ecoji .NET.Ecoji.EncodingOptions.Default
+  - Ecoji .NET.Ecoji.EncodingOptions.NewLine
+  - Ecoji .NET.Ecoji.EncodingOptions.op_Implicit(System.Int32)~Ecoji.EncodingOptions
+  - Ecoji .NET.Ecoji.EncodingOptions.WithNewLine(System.String)
+  - Ecoji .NET.Ecoji.EncodingOptions.WithWrap(System.Int32)
+  - Ecoji .NET.Ecoji.EncodingOptions.Wrap
+  langs:
+  - csharp
+  - vb
+  name: Ecoji.EncodingOptions
+  nameWithType: Ecoji.EncodingOptions
+  fullName: Ecoji.EncodingOptions
+  type: Struct
+  source:
+    remote:
+      path: src/Ecoji/Ecoji.cs
+      branch: master
+      repo: git@github.com:abock/dotnet-ecoji.git
+    id: EncodingOptions
+    path: ../src/Ecoji/Ecoji.cs
+    startLine: 21
+  assemblies:
+  - Ecoji
+  namespace: Ecoji .NET
+  summary: "\nOptions for customizing ecoji output.\n"
+  example: []
+  syntax:
+    content: public struct EncodingOptions
+    content.vb: Public Structure EncodingOptions
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Ecoji .NET.Ecoji.EncodingOptions.Default
+  commentId: F:Ecoji .NET.Ecoji.EncodingOptions.Default
+  id: Default
+  parent: Ecoji .NET.Ecoji.EncodingOptions
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: Ecoji.EncodingOptions.Default
+  fullName: Ecoji.EncodingOptions.Default
+  type: Field
+  source:
+    remote:
+      path: src/Ecoji/Ecoji.cs
+      branch: master
+      repo: git@github.com:abock/dotnet-ecoji.git
+    id: Default
+    path: ../src/Ecoji/Ecoji.cs
+    startLine: 27
+  assemblies:
+  - Ecoji
+  namespace: Ecoji .NET
+  summary: "\nNo wrapping and uses the system&apos;s default new line,\n<xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static readonly Ecoji.EncodingOptions Default
+    return:
+      type: Ecoji .NET.Ecoji.EncodingOptions
+    content.vb: Public Shared ReadOnly Default As Ecoji.EncodingOptions
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Ecoji .NET.Ecoji.EncodingOptions.Wrap
+  commentId: P:Ecoji .NET.Ecoji.EncodingOptions.Wrap
+  id: Wrap
+  parent: Ecoji .NET.Ecoji.EncodingOptions
+  langs:
+  - csharp
+  - vb
+  name: Wrap
+  nameWithType: Ecoji.EncodingOptions.Wrap
+  fullName: Ecoji.EncodingOptions.Wrap
+  type: Property
+  source:
+    remote:
+      path: src/Ecoji/Ecoji.cs
+      branch: master
+      repo: git@github.com:abock/dotnet-ecoji.git
+    id: Wrap
+    path: ../src/Ecoji/Ecoji.cs
+    startLine: 35
+  assemblies:
+  - Ecoji
+  namespace: Ecoji .NET
+  summary: "\nInsert <xref href=\"Ecoji.EncodingOptions.NewLine\" data-throw-if-not-resolved=\"false\"></xref> after after every number of\nspecified emojis have been written. <code>0</code> disables wrapping.\n"
+  example: []
+  syntax:
+    content: public int Wrap { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Wrap As Integer
+  overload: Ecoji .NET.Ecoji.EncodingOptions.Wrap*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Ecoji .NET.Ecoji.EncodingOptions.NewLine
+  commentId: P:Ecoji .NET.Ecoji.EncodingOptions.NewLine
+  id: NewLine
+  parent: Ecoji .NET.Ecoji.EncodingOptions
+  langs:
+  - csharp
+  - vb
+  name: NewLine
+  nameWithType: Ecoji.EncodingOptions.NewLine
+  fullName: Ecoji.EncodingOptions.NewLine
+  type: Property
+  source:
+    remote:
+      path: src/Ecoji/Ecoji.cs
+      branch: master
+      repo: git@github.com:abock/dotnet-ecoji.git
+    id: NewLine
+    path: ../src/Ecoji/Ecoji.cs
+    startLine: 41
+  assemblies:
+  - Ecoji
+  namespace: Ecoji .NET
+  summary: "\nThe string to use when wrapping. A <code>null</code> value will use the\nsystem&apos;s default new line, <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public string NewLine { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property NewLine As String
+  overload: Ecoji .NET.Ecoji.EncodingOptions.NewLine*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Ecoji .NET.Ecoji.EncodingOptions.#ctor(System.Int32,System.String)
+  commentId: M:Ecoji .NET.Ecoji.EncodingOptions.#ctor(System.Int32,System.String)
+  id: '#ctor(System.Int32,System.String)'
+  parent: Ecoji .NET.Ecoji.EncodingOptions
+  langs:
+  - csharp
+  - vb
+  name: EncodingOptions(Int32, String)
+  nameWithType: Ecoji.EncodingOptions.EncodingOptions(Int32, String)
+  fullName: Ecoji.EncodingOptions.EncodingOptions(System.Int32, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Ecoji/Ecoji.cs
+      branch: master
+      repo: git@github.com:abock/dotnet-ecoji.git
+    id: .ctor
+    path: ../src/Ecoji/Ecoji.cs
+    startLine: 51
+  assemblies:
+  - Ecoji
+  namespace: Ecoji .NET
+  example: []
+  syntax:
+    content: public EncodingOptions(int wrap, string newLine)
+    parameters:
+    - id: wrap
+      type: System.Int32
+      description: "\nInsert  after after every number of\nspecified emojis have been written. <code>0</code> disables wrapping.\n"
+    - id: newLine
+      type: System.String
+      description: "\nThe string to use when wrapping. A <code>null</code> value will use the\nsystem&apos;s default new line, <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+    content.vb: Public Sub New(wrap As Integer, newLine As String)
+  overload: Ecoji .NET.Ecoji.EncodingOptions.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Ecoji .NET.Ecoji.EncodingOptions.WithWrap(System.Int32)
+  commentId: M:Ecoji .NET.Ecoji.EncodingOptions.WithWrap(System.Int32)
+  id: WithWrap(System.Int32)
+  parent: Ecoji .NET.Ecoji.EncodingOptions
+  langs:
+  - csharp
+  - vb
+  name: WithWrap(Int32)
+  nameWithType: Ecoji.EncodingOptions.WithWrap(Int32)
+  fullName: Ecoji.EncodingOptions.WithWrap(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Ecoji/Ecoji.cs
+      branch: master
+      repo: git@github.com:abock/dotnet-ecoji.git
+    id: WithWrap
+    path: ../src/Ecoji/Ecoji.cs
+    startLine: 62
+  assemblies:
+  - Ecoji
+  namespace: Ecoji .NET
+  example: []
+  syntax:
+    content: public Ecoji.EncodingOptions WithWrap(int wrap)
+    parameters:
+    - id: wrap
+      type: System.Int32
+      description: "\nInsert <xref href=\"Ecoji.EncodingOptions.NewLine\" data-throw-if-not-resolved=\"false\"></xref> after after every\nnumber of specified emojis have been written. <code>0</code> disables\nwrapping.\n"
+    return:
+      type: Ecoji .NET.Ecoji.EncodingOptions
+    content.vb: Public Function WithWrap(wrap As Integer) As Ecoji.EncodingOptions
+  overload: Ecoji .NET.Ecoji.EncodingOptions.WithWrap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Ecoji .NET.Ecoji.EncodingOptions.WithNewLine(System.String)
+  commentId: M:Ecoji .NET.Ecoji.EncodingOptions.WithNewLine(System.String)
+  id: WithNewLine(System.String)
+  parent: Ecoji .NET.Ecoji.EncodingOptions
+  langs:
+  - csharp
+  - vb
+  name: WithNewLine(String)
+  nameWithType: Ecoji.EncodingOptions.WithNewLine(String)
+  fullName: Ecoji.EncodingOptions.WithNewLine(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Ecoji/Ecoji.cs
+      branch: master
+      repo: git@github.com:abock/dotnet-ecoji.git
+    id: WithNewLine
+    path: ../src/Ecoji/Ecoji.cs
+    startLine: 69
+  assemblies:
+  - Ecoji
+  namespace: Ecoji .NET
+  example: []
+  syntax:
+    content: public Ecoji.EncodingOptions WithNewLine(string newLine)
+    parameters:
+    - id: newLine
+      type: System.String
+      description: "\nThe string to use when wrapping. A <code>null</code> value will use the\nsystem&apos;s default new line, <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+    return:
+      type: Ecoji .NET.Ecoji.EncodingOptions
+    content.vb: Public Function WithNewLine(newLine As String) As Ecoji.EncodingOptions
+  overload: Ecoji .NET.Ecoji.EncodingOptions.WithNewLine*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Ecoji .NET.Ecoji.EncodingOptions.op_Implicit(System.Int32)~Ecoji.EncodingOptions
+  commentId: M:Ecoji .NET.Ecoji.EncodingOptions.op_Implicit(System.Int32)~Ecoji.EncodingOptions
+  id: op_Implicit(System.Int32)~Ecoji.EncodingOptions
+  parent: Ecoji .NET.Ecoji.EncodingOptions
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Int32 to Ecoji.EncodingOptions)
+  nameWithType: Ecoji.EncodingOptions.Implicit(Int32 to Ecoji.EncodingOptions)
+  fullName: Ecoji.EncodingOptions.Implicit(System.Int32 to Ecoji.EncodingOptions)
+  type: Operator
+  source:
+    remote:
+      path: src/Ecoji/Ecoji.cs
+      branch: master
+      repo: git@github.com:abock/dotnet-ecoji.git
+    id: op_Implicit
+    path: ../src/Ecoji/Ecoji.cs
+    startLine: 72
+  assemblies:
+  - Ecoji
+  namespace: Ecoji .NET
+  syntax:
+    content: public static implicit operator Ecoji.EncodingOptions(int wrap)
+    parameters:
+    - id: wrap
+      type: System.Int32
+    return:
+      type: Ecoji .NET.Ecoji.EncodingOptions
+    content.vb: Public Shared Widening Operator CType(wrap As Integer) As Ecoji.EncodingOptions
+  overload: Ecoji .NET.Ecoji.EncodingOptions.op_Implicit*
+  nameWithType.vb: Ecoji.EncodingOptions.Widening(Int32 to Ecoji.EncodingOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Ecoji.EncodingOptions.Widening(System.Int32 to Ecoji.EncodingOptions)
+  name.vb: Widening(Int32 to Ecoji.EncodingOptions)
+references:
+- uid: Ecoji .NET
+  name: Ecoji .NET
+  nameWithType: Ecoji .NET
+  fullName: Ecoji .NET
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Environment.NewLine
+  commentId: P:System.Environment.NewLine
+  isExternal: true
+- uid: Ecoji .NET.Ecoji.EncodingOptions
+  commentId: T:Ecoji .NET.Ecoji.EncodingOptions
+  name: Ecoji.EncodingOptions
+  nameWithType: Ecoji.EncodingOptions
+  fullName: Ecoji.EncodingOptions
+- uid: Ecoji.EncodingOptions.NewLine
+  commentId: P:Ecoji.EncodingOptions.NewLine
+  isExternal: true
+- uid: Ecoji .NET.Ecoji.EncodingOptions.Wrap*
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.Wrap
+  name: Wrap
+  nameWithType: Ecoji.EncodingOptions.Wrap
+  fullName: Ecoji.EncodingOptions.Wrap
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Ecoji .NET.Ecoji.EncodingOptions.NewLine*
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.NewLine
+  name: NewLine
+  nameWithType: Ecoji.EncodingOptions.NewLine
+  fullName: Ecoji.EncodingOptions.NewLine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Ecoji .NET.Ecoji.EncodingOptions.#ctor*
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.#ctor
+  name: EncodingOptions
+  nameWithType: Ecoji.EncodingOptions.EncodingOptions
+  fullName: Ecoji.EncodingOptions.EncodingOptions
+- uid: Ecoji .NET.Ecoji.EncodingOptions.WithWrap*
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.WithWrap
+  name: WithWrap
+  nameWithType: Ecoji.EncodingOptions.WithWrap
+  fullName: Ecoji.EncodingOptions.WithWrap
+- uid: Ecoji .NET.Ecoji.EncodingOptions.WithNewLine*
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.WithNewLine
+  name: WithNewLine
+  nameWithType: Ecoji.EncodingOptions.WithNewLine
+  fullName: Ecoji.EncodingOptions.WithNewLine
+- uid: Ecoji .NET.Ecoji.EncodingOptions.op_Implicit*
+  commentId: Overload:Ecoji .NET.Ecoji.EncodingOptions.op_Implicit
+  name: Implicit
+  nameWithType: Ecoji.EncodingOptions.Implicit
+  fullName: Ecoji.EncodingOptions.Implicit
+  nameWithType.vb: Ecoji.EncodingOptions.Widening
+  fullName.vb: Ecoji.EncodingOptions.Widening
+  name.vb: Widening

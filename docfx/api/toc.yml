@@ -4,6 +4,8 @@
   items:
   - uid: Ecoji .NET.Ecoji
     name: Ecoji
+  - uid: Ecoji .NET.Ecoji.EncodingOptions
+    name: Ecoji.EncodingOptions
   - uid: Ecoji .NET.Ecoji.InvalidCharacterException
     name: Ecoji.InvalidCharacterException
   - uid: Ecoji .NET.Ecoji.UnexpectedEndOfInputException
