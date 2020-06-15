@@ -16,74 +16,125 @@ using System.Text;
 /// </summary>
 public static partial class Ecoji
 {
+    /// <summary>
+    /// Options for customizing ecoji output.
+    /// </summary>
+    public readonly struct EncodingOptions
+    {
+        /// <summary>
+        /// No wrapping and uses the system's default new line,
+        /// <see cref="Environment.NewLine"/>.
+        /// </summary>
+        public static readonly EncodingOptions Default = new EncodingOptions(
+            wrap: 0,
+            newLine: null);
+
+        /// <summary>
+        /// Insert <see cref="NewLine"/> after after every number of
+        /// specified emojis have been written. <c>0</c> disables wrapping.
+        /// </summary>
+        public int Wrap { get; }
+
+        /// <summary>
+        /// The string to use when wrapping. A <c>null</c> value will use the
+        /// system's default new line, <see cref="Environment.NewLine"/>.
+        /// </summary>
+        public string? NewLine { get; }
+
+        /// <param name="wrap">
+        /// Insert <paramref cref="newLine"/> after after every number of
+        /// specified emojis have been written. <c>0</c> disables wrapping.
+        /// </param>
+        /// <param name="newLine">
+        /// The string to use when wrapping. A <c>null</c> value will use the
+        /// system's default new line, <see cref="Environment.NewLine"/>.
+        /// </param>
+        public EncodingOptions(int wrap, string? newLine)
+        {
+            Wrap = wrap;
+            NewLine = newLine;
+        }
+
+        /// <param name="wrap">
+        /// Insert <see cref="EncodingOptions.NewLine"/> after after every
+        /// number of specified emojis have been written. <c>0</c> disables
+        /// wrapping.
+        /// </param>
+        public EncodingOptions WithWrap(int wrap)
+            => new EncodingOptions(wrap, NewLine);
+
+        /// <param name="newLine">
+        /// The string to use when wrapping. A <c>null</c> value will use the
+        /// system's default new line, <see cref="Environment.NewLine"/>.
+        /// </param>
+        public EncodingOptions WithNewLine(string? newLine)
+            => new EncodingOptions(Wrap, newLine);
+
+        public static implicit operator EncodingOptions(int wrap)
+            => new EncodingOptions(wrap, null);
+    }
+
+    static readonly Encoding UTF8NoBOM = new UTF8Encoding(
+        encoderShouldEmitUTF8Identifier: false,
+        throwOnInvalidBytes: true);
+
     /// <summary>Encode a UTF-8 string using emojis with optional wrapping.</summary>
     /// <returns>A string of emojis encoding <paramref name="input"/>.</returns>
     /// <param name="input">The string to encode.</param>
-    /// <param name="wrap">
-    /// Insert <see cref="Environment.NewLine"/> after after every 
-    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
-    /// </param>
+    /// <param name="options">Options to use to customize the ecoji output.</param>
     /// <exception cref="ArgumentNullException">
     /// Thrown when <paramref name="input"/> is <c>null</c>.
     /// </exception>
-    public static string Encode(string input, int wrap = 0)
+    public static string Encode(string input, EncodingOptions options = default)
     {
         if (input is null)
             throw new ArgumentNullException(nameof(input));
 
-        return Encode(Encoding.UTF8.GetBytes(input), wrap);
+        return Encode(UTF8NoBOM.GetBytes(input), options);
     }
 
     /// <summary>Encode data using emojis with optional wrapping.</summary>
     /// <returns>A string of emojis encoding <paramref name="input"/>.</returns>
     /// <param name="input">The bytes to encode.</param>
-    /// <param name="wrap">
-    /// Insert <see cref="Environment.NewLine"/> after after every 
-    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
-    /// </param>
+    /// <param name="options">Options to use to customize the ecoji output.</param>
     /// <exception cref="ArgumentNullException">
     /// Thrown when <paramref name="input"/> is <c>null</c>.
     /// </exception>
-    public static string Encode(byte[] input, int wrap = 0)
+    public static string Encode(byte[] input, EncodingOptions options = default)
     {
         if (input is null)
             throw new ArgumentNullException(nameof(input));
 
         using var stream = new MemoryStream(input);
-        return Encode(stream, wrap);
+        return Encode(stream, options);
     }
 
     /// <summary>Encode a stream of data using emojis with optional wrapping.</summary>
     /// <returns>A string of emojis encoding <paramref name="input"/>.</returns>
     /// <param name="input">The stream to encode.</param>
-    /// <param name="wrap">
-    /// Insert <see cref="Environment.NewLine"/> after after every 
-    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
-    /// </param>
+    /// <param name="options">Options to use to customize the ecoji output.</param>
     /// <exception cref="ArgumentNullException">
     /// Thrown when <paramref name="input"/> is <c>null</c>.
     /// </exception>
-    public static string Encode(Stream input, int wrap = 0)
+    public static string Encode(Stream input, EncodingOptions options = default)
     {
         if (input is null)
             throw new ArgumentNullException(nameof(input));
 
         using var writer = new StringWriter();
-        Encode(input, writer, wrap);
+        writer.NewLine = options.NewLine ?? Environment.NewLine;
+        Encode(input, writer, options.Wrap);
         return writer.ToString();
     }
 
     /// <summary>Encode a stream of data using emojis with optional wrapping.</summary>
     /// <param name="input">The stream to encode.</param>
     /// <param name="output">The stream to which encoded emojis will be written.</param>
-    /// <param name="wrap">
-    /// Insert <see cref="Environment.NewLine"/> after after every 
-    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
-    /// </param>
+    /// <param name="options">Options to use to customize the ecoji output.</param>
     /// <exception cref="ArgumentNullException">
     /// Thrown when either <paramref name="input"/> or <paramref name="output"/> is <c>null</c>.
     /// </exception>
-    public static void Encode(Stream input, Stream output, int wrap = 0)
+    public static void Encode(Stream input, Stream output, EncodingOptions options = default)
     {
         if (input is null)
             throw new ArgumentNullException(nameof(input));
@@ -91,15 +142,23 @@ public static partial class Ecoji
         if (output is null)
             throw new ArgumentNullException(nameof(output));
 
-        Encode(input, new StreamWriter(output), wrap);
+        using var writer = new StreamWriter(
+            output,
+            encoding: UTF8NoBOM,
+            bufferSize: 1024,
+            leaveOpen: true);
+
+        writer.NewLine = options.NewLine ?? Environment.NewLine;
+
+        Encode(input, writer, options.Wrap);
     }
 
     /// <summary>Encode a stream of data using emojis with optional wrapping.</summary>
     /// <param name="input">The stream to encode.</param>
     /// <param name="output">The writer to which encoded emojis will be written.</param>
     /// <param name="wrap">
-    /// Insert <see cref="Environment.NewLine"/> after after every 
-    /// <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
+    /// Insert <see cref="TextWriter.NewLine"/> set on <paramref name="output"/> after
+    /// after every <paramref name="wrap"/> emojis. <c>0</c> disables wrapping.
     /// </param>
     /// <exception cref="ArgumentNullException">
     /// Thrown when either <paramref name="input"/> or <paramref name="output"/> is <c>null</c>.
@@ -208,7 +267,7 @@ public static partial class Ecoji
         if (input is null)
             throw new ArgumentNullException(nameof(input));
 
-        return Decode(input, Encoding.UTF8);
+        return Decode(input, UTF8NoBOM);
     }
 
     /// <summary>Decode a string of ecoji emojis that encode string in the provided encoding.</summary>
@@ -312,10 +371,10 @@ public static partial class Ecoji
     {
         if (input is null)
             throw new ArgumentNullException(nameof(input));
-        
+
         if (output is null)
             throw new ArgumentNullException(nameof(output));
-        
+
         Decode(new StreamReader(input), output);
     }
 

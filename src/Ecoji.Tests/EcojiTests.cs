@@ -39,7 +39,9 @@ public class EcojiTests
     [Theory]
     [MemberData(nameof(StringTestCases))]
     public void Encode(string input, string expectedOutput)
-        => Assert.Equal(expectedOutput, Ecoji.Encode(input));
+        => Assert.Equal(expectedOutput, Ecoji.Encode(
+            input,
+            new Ecoji.EncodingOptions(0, "\n")));
 
     [Theory]
     [MemberData(nameof(StringTestCases))]
@@ -81,7 +83,9 @@ public class EcojiTests
         var inputBytes = File.ReadAllBytes(inputFile);
         var expectedEcojiString = File.ReadAllText(ecojiReferenceFile);
         
-        var actualEcojiString = Ecoji.Encode(inputBytes, wrap)
+        var actualEcojiString = Ecoji.Encode(
+            inputBytes, 
+            new Ecoji.EncodingOptions(wrap: wrap, newLine: "\n"))
             + "\n"; // the reference ecoji command line tool appends a newline
 
         Assert.Equal(expectedEcojiString, actualEcojiString);
@@ -90,4 +94,8 @@ public class EcojiTests
 
         Assert.Equal(inputBytes, roundTripBytes);
     }
+
+    [Fact]
+    public void ImplicitWrapOption()
+        => Ecoji.Encode("hello", 1);
 }
