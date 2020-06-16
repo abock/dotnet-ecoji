@@ -186,9 +186,12 @@ public static partial class Ecoji
                     break;
             }
 
-            if (read <= 0)
+            if (read <= 0) {
+                if (wrapLineProgress > 0)
+                    output.WriteLine();
                 break;
-
+            }
+            
             for (var i = read; i < b.Length; i++)
                 b[i] = 0;
 
