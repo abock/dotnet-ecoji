@@ -19,7 +19,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: UnexpectedEndOfInputException
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 511
+    startLine: 514
   assemblies:
   - Ecoji
   namespace: Ecoji .NET

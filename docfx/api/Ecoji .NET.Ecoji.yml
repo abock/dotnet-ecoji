@@ -309,7 +309,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: DecodeUtf8
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 264
+    startLine: 267
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -360,7 +360,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 289
+    startLine: 292
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -414,7 +414,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 316
+    startLine: 319
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -465,7 +465,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 343
+    startLine: 346
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -516,7 +516,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 369
+    startLine: 372
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
@@ -567,7 +567,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: Decode
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 396
+    startLine: 399
   assemblies:
   - Ecoji
   namespace: Ecoji .NET

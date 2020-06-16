@@ -19,7 +19,7 @@ items:
       repo: git@github.com:abock/dotnet-ecoji.git
     id: InvalidCharacterException
     path: ../src/Ecoji/Ecoji.cs
-    startLine: 503
+    startLine: 506
   assemblies:
   - Ecoji
   namespace: Ecoji .NET
