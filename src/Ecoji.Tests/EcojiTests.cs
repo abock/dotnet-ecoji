@@ -85,8 +85,7 @@ public class EcojiTests
         
         var actualEcojiString = Ecoji.Encode(
             inputBytes, 
-            new Ecoji.EncodingOptions(wrap: wrap, newLine: "\n"))
-            + "\n"; // the reference ecoji command line tool appends a newline
+            new Ecoji.EncodingOptions(wrap: wrap, newLine: "\n"));
 
         Assert.Equal(expectedEcojiString, actualEcojiString);
 
