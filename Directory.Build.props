@@ -10,9 +10,10 @@
     <Authors>Aaron Bockover</Authors>
     <Copyright>Copyright 2020 Aaron Bockover</Copyright>
     <RepositoryUrl>https://github.com/abock/dotnet-ecoji</RepositoryUrl>
+    <PackageProjectUrl>https://ecoji.dev</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageTags>emoji;ecoji;encoding;decoding;unicode;utf8;</PackageTags>
+    <PackageTags>emoji;ecoji;encoding;decoding;unicode;utf8;utf-8;base1024;base64</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)docfx\images\icon.png" Pack="true" PackagePath="\"/>
