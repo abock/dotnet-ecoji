@@ -6,6 +6,8 @@
 
 Encode and decode data using emoji in .NET. Like base64, except base1024, and uses an emoji alphabet. Ecoji .NET is a .NET Standard 2.0 implementation of [Keith Turner's Ecoji Standard](https://github.com/keith-turner/ecoji). In addition to the tiny `netstandard2.0` library, a .NET Core command line tool is available.
 
+Visit [ecoji.io](https://ecoji.io) to try Ecoji in your browser.
+
 ## Read the Docs
 
 For code and command line tool examples, API documentation, and a little more,
